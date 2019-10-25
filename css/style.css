@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 500vh;
+    background: #fff;
+    position: relative;
+    width: auto;
+
+}
+
+/* Navbar */
+.navbar {
+    background: transparent;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-item .nav-link {
+    color: #fff !important;
+}
+
+.navbar .navbar-brand {
+    font-size: 27px;
+}
+
+.navbar.active {
+    background-color: #595959;
+    padding-top: 20px 0px;
+    animation: navbar .4s ease-in;
+}
+
+/* End Of Navbar */
+
+/* Header/Carousel */
+.header .carousel-inner {
+    height: 600px !important;
+    position: relative;
+}
+
+.carousel-inner .active {
+    height: 100%;
+}
+
+.carousel-overlay {
+    position: absolute;
+    background-image: linear-gradient(45deg, rgba(214, 213, 213, 0.4), rgba(214, 213, 213, 0.2));
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header .carousel-caption {
+    z-index: 2;
+    line-height: 600px;
+    text-align: left;
+    top: 140px;
+}
+
+.header .carousel-caption h3 {
+    font-size: 3.3em;
+    font-weight: 500;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, .6);
+}
+
+.header .carousel-caption span {
+    font-weight: 300;
+}
+
+.header .carousel-caption h5 {
+    font-size: 1.3em;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+/* End of Header/Carousel */
+
+/* About Section */
+
+#about .details {
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+#about .details h2 {
+    font-weight: 300;
+}
+
+#about .details span {
+    font-weight: 500;
+}
+
+#about .image {
+    height: 100% !important;
+    position: absolute;
+    overflow: hidden;
+    margin-right: -104px;
+}
+
+#about .image img {
+    height: 100% !important;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* What i do section */
+
+
+#do .card {
+    text-align: center;
+    border: none;
+    height: 300px !important;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#do .do-overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: radial-gradient(rgba(216, 215, 215, 0.1), rgba(216, 215, 215, .5));
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#do .card-img-overlay {
+    z-index: 2;
+}
+
+#do .card-img-overlay h5 {
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+    font-size: 38px;
+    font-weight: 350;
+}
+
+#do .card-img-overlay span {
+    font-weight: 600;
+}
+
+#do .card-img-overlay p {
+    font-size: 22px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+#do button {
+    background: rgba(200, 200, 200, .4);
+    text-transform: uppercase;
+    padding: 2px 5px;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    padding: 10px;
+    transition: background .3s ease-in;
+}
+
+#do button:hover {
+    background: rgba(200, 200, 200, .7);
+}
+
+#do .card img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+/* End of what i do section */
+
+/* Interest Section */
+
+#interest .details {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+#interest .details h2 {
+    font-weight: 300;
+}
+
+#interest .details span {
+    font-weight: 500;
+}
+
+#interest .image {
+    height: 100% !important;
+    position: absolute;
+    overflow: hidden;
+    margin-left: -120px;
+}
+
+#interest .image img {
+    height: 100% !important;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* End of Interest Section */
+
+/* Portfolio Section */
+#portfolio {
+    padding-bottom: 25px;
+    background: #fff;
+    text-align: center;
+}
+
+#portfolio .portfolio-overlay {
+    z-index: 999 !important;
+    background: linear-gradient(45deg, rgba(215, 215, 215, .7), rgba(215, 215, 215, .2));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+#portfolio .portfolio-overlay h2 {
+    position: relative;
+    padding-bottom: 40px;
+    max-width: 1200px;
+    font-size: 5em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    mix-blend-mode: screen;
+}
+
+#portfolio:hover .portfolio-overlay {
+    opacity: 0;
+    z-index: -999 !important;
+}
+
+#portfolio h2 {
+    font-weight: 300;
+}
+
+#portfolio span {
+    font-weight: 500;
+}
+
+#portfolio .portfolio-container {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template: "1fr 1fr 1fr 1fr 1fr"33.33vh "1fr 1fr 1fr 1fr 1fr"33.33vh "1fr 1fr 1fr 1fr 1fr"33.33vh;
+
+}
+
+#portfolio .portfolio-container .box {
+    position: relative;
+    background: #ccc;
+    overflow: hidden;
+}
+
+#portfolio .portfolio-container .box img::before {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #454545;
+    z-index: 2;
+}
+
+#portfolio .portfolio-container .box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition-delay: .3s;
+    transition: .5s linear;
+}
+
+#portfolio .portfolio-container .box.a {
+    grid-row: span 2;
+}
+
+#portfolio .portfolio-container .box.b,
+#portfolio .portfolio-container .box.f,
+#portfolio .portfolio-container .box.h,
+#portfolio .portfolio-container .box.j {
+    grid-column: span 2;
+}
+
+#portfolio .image-overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: radial-gradient(rgba(216, 215, 215, 0.1), rgba(216, 215, 215, .5));
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity .3s ease;
+}
+
+#portfolio .box:hover .image-overlay {
+    opacity: 0;
+    z-index: -1;
+}
+
+#portfolio .box:hover img {
+    transform: scale(1.15);
+}
+
+
+/* End of Portfolio Section */
+
+
+/* Contact Section */
+#contact span {
+    font-weight: 300;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: rgba(109, 109, 109, 0.8);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(109, 109, 109, 0.6);
+    outline: 0 none;
+}
+
+#contact button {
+    background: rgba(130, 130, 130, .9);
+    text-transform: uppercase;
+    padding: 2px 5px;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    padding: 10px;
+    transition: background .3s ease-in;
+}
+
+/* End of Contact Section */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}
+
+/* Footer */
+
+.footer-basic {
+    padding: 40px 0;
+    background-color: #454545;
+    color: #fff;
+}
+
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer-basic li {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+}
+
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer-basic .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+
+
+
+
+/* Mobile Vers. */
+@media (max-width:768px) {
+    #about {
+        margin-top: -200px;
+    }
+
+    #about .details {
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+
+    #about .image {
+        position: relative;
+        margin-bottom: 30px;
+        margin-right: 0px !important;
+        height: 300px !important;
+    }
+
+    #interest .image {
+        position: relative;
+        margin-top: 30px;
+        margin-left: 0px !important;
+        height: 300px !important;
+    }
+
+    #portfolio .portfolio-container {
+        grid-template: "1fr 1fr"250px " 1fr 1fr"250px " 1fr 1fr"250px " 1fr 1fr"250px " 1fr 1fr"250px;
+    }
+
+    #portfolio .portfolio-container .box.h {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 991px) {
+    #portfolio .portfolio-container {
+        grid-template: "1fr 1fr 1fr "250px " 1fr 1fr 1fr"250px " 1fr 1fr 1fr"250px " 1fr 1fr 1fr"250px " 1fr 1fr 1fr"250px;
+    }
+}
+
+
+/* Animation */
+@keyframes navbar {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
